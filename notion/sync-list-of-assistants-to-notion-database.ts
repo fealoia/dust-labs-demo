@@ -5,16 +5,6 @@ import { parse } from 'csv-parse/sync';
 
 dotenv.config();
 
-// source
-const DUST_API_KEY = process.env.DUST_API_KEY;
-const DUST_WORKSPACE_ID = process.env.DUST_WORKSPACE_ID;
-
-// destination
-const NOTION_API_KEY = process.env.NOTION_API_KEY;
-const NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID;
-
-// configurable behavior
-const NOTION_SOFT_DELETE = process.env.NOTION_SOFT_DELETE === 'true' || false;
 
 const missingEnvVars = [
   ['DUST_API_KEY', DUST_API_KEY],
